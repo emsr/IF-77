@@ -1,3 +1,5 @@
+
+
       SUBROUTINE ASORP(FK,AO,AW)      
         implicit real*8(A-H,O-Z)
 C     ROUTINE FOR MODEL APR 77        
@@ -55,6 +57,8 @@ C     ROUTINE FOR MODEL APR 77
    21 AW=0.0000         
       RETURN            
       END               
+
+
       SUBROUTINE COMB(YA,YB)          
         implicit real*8(A-H,O-Z)
 C     ROUTINE FOR MODEL APR 77        
@@ -140,6 +144,8 @@ C     ROUTINE FOR MODEL APR 77
      X///)              
       RETURN            
       END               
+
+
       SUBROUTINE CNLUT(A,B,C,N,R,RHO,P,D)           
         implicit real*8(A-H,O-Z)
           
@@ -183,6 +189,8 @@ C     ROUTINE FOR MODEL APR 77
    22 Y(I)=B(K)         
       GO TO 17          
       END               
+
+
       SUBROUTINE DFRAC                
         implicit real*8(A-H,O-Z)
           
@@ -450,6 +458,8 @@ C     -----------------------------------------------------------
    50 W=0.              
       GO TO 45          
       END               
+
+
       FUNCTION FDASP(S)               
         implicit real*8(A-H,O-Z)
           
@@ -476,6 +486,8 @@ C     K HAS THE OPPOSITE SIGN OF 101 BUT THE SAME AS THE IRE PAPER
     6 FDASP=AK          
       RETURN            
       END               
+
+
       SUBROUTINE FRNEL(V,FV,PH)       
         implicit real*8(A-H,O-Z)
 C     ROUTINE FOR MODEL APR 77        
@@ -562,6 +574,8 @@ C     SUBROUTINE TO CALCULATE THE FRESNEL INTEGRAL
       W=1.+(C+S)        
       GO TO 75          
       END               
+
+
       SUBROUTINE GANE(X,ITA,HH,TT,GAV,GAH,GDR,NP)   
         implicit real*8(A-H,O-Z)
 ****  850606 CORRECTION ADDED         
@@ -713,7 +727,9 @@ C     ----------------- JTAC -------------------------------------------
   507 WRITE(IOT,557)PA7               
       GO TO 550         
         END             
-      FUNCTION GHBAR (F,A,B,AK,DHOR,HE)             
+
+
+        FUNCTION GHBAR (F,A,B,AK,DHOR,HE)             
         implicit real*8(A-H,O-Z)
 C     ROUTINE FOR MODEL APR 77        
           
@@ -760,6 +776,8 @@ C     ROUTINE FOR MODEL APR 77
    17 GHT=-13.          
       GO TO 18          
       END               
+
+
       SUBROUTINE PAGE(N)              
         implicit real*8(A-H,O-Z)
 C     ROUTINE FOR MODEL APR 77        
@@ -781,6 +799,8 @@ C     ROUTINE FOR MODEL APR 77
    14 WRITE(IOT,4)      
       GO TO 11          
       END               
+
+
       FUNCTION QERFI(Q)               
         implicit real*8(A-H,O-Z)
 C     ROUTINE FOR MODEL APR 77        
@@ -802,6 +822,8 @@ C        MAX ERROR 4.5E-4
       IF(Q .GT. 0.5)     QERFI=-QERFI               
       RETURN            
       END               
+
+
       SUBROUTINE QVARB(KL)             
         implicit real*8(A-H,O-Z)
 C     ROUTINE FOR MODEL APR 77        
@@ -914,6 +936,8 @@ C           CORRESPOND TO THE DISTANCE S
    11 AD(I)=YT          
       RETURN            
       END               
+
+
       SUBROUTINE RAIN                 
         implicit real*8(A-H,O-Z)
 ****  850402 CORRECTIONS INCLUDED     

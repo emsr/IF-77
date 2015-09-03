@@ -1,3 +1,5 @@
+
+
       SUBROUTINE RDEMS(ARG,ADG,IMI,SEC)             
         implicit real*8(A-H,O-Z)
 ****  850402 CHANGES INCLUDED         
@@ -36,6 +38,8 @@ C     SUBROUTINE TO CHANGE RADIANS TO DEGREES, MINUTES AND SECONDS
       IMI=0             
       GO TO 6           
       END               
+
+
       SUBROUTINE RECPX(XI,FK,IR,NP,MS,DK,GH,GV,R,PIC,RLM)         
         implicit real*8(A-H,O-Z)
           
@@ -179,6 +183,8 @@ C             THIS INCLUDES THE CIRCULAR POLARIZATION
       SQSI=0.           
       GO TO 16          
       END               
+
+
       FUNCTION RYTRA(TT)              
         implicit real*8(A-H,O-Z)
           
@@ -306,6 +312,8 @@ C     ----------ENTRANCE FOR TRACING RAY-------------------------
    86 NLA=NL            
       GO TO 40          
       END               
+
+
       SUBROUTINE SCAT                 
         implicit real*8(A-H,O-Z)
 ****  850402 CORRECTIONS INCLUDED     
@@ -496,6 +504,8 @@ C              ERROR RETURN
       STOP 'BAD SCAT'                 
           
       END               
+
+
       SUBROUTINE SCNTL                
         implicit real*8(A-H,O-Z)
           
@@ -568,6 +578,8 @@ C     ROUTINE FOR MODEL APR 77
    23 IS1=1             
       GO TO 19          
       END               
+
+
       SUBROUTINE SIG(KSC,FK)          
         implicit real*8(A-H,O-Z)
 C     ROUTINE FOR MODEL APR 77        
@@ -613,6 +625,8 @@ C     ROUTINE FOR MODEL APR 77
    39 J=3               
       GO TO 40          
       END               
+
+
       SUBROUTINE SORB(H1,H2,A,R0,CA,RE)             
         implicit real*8(A-H,O-Z)
 C     ROUTINE FOR MODEL APR 77        
@@ -653,6 +667,8 @@ C     ROUTINE FOR MODEL APR 77
       BA=-(CA+(R0/A))                 
       GO TO 11          
       END               
+
+
       FUNCTION TABLE(XINT)            
         implicit real*8(A-H,O-Z)
 C     ROUTINE FOR MODEL APR 77        
@@ -736,6 +752,8 @@ C     -----------------SET UP ARRAY-------------------------------------
       TABLE =Y(M)       
       RETURN            
       END               
+
+
       SUBROUTINE TIMBK(NTB,DE,G1,G9)                
         implicit real*8(A-H,O-Z)
       DIMENSION C1(3,11),C2(3,11),C3(3,11),CN1(3,11),CN2(3,11),CN3(3,11)        
@@ -802,6 +820,8 @@ C     -----------------SET UP ARRAY-------------------------------------
       IF(NTB.GT.18)J=11               
       GO TO 12          
       END               
+
+
       SUBROUTINE TRMES(A,B,C,NA,R,S,T,NR,X,Y,Z,N)   
         implicit real*8(A-H,O-Z)
 C     ROUTINE FOR MODEL APR 77        
@@ -846,6 +866,8 @@ C     ROUTINE FOR MODEL APR 77
    18 CONTINUE          
    12 RETURN            
       END               
+
+
       SUBROUTINE TMESH(A,NA,R,NR,X,N)               
         implicit real*8(A-H,O-Z)
 C     ROUTINE FOR MODEL APR 77        
@@ -880,6 +902,8 @@ C     ROUTINE FOR MODEL APR 77
    18 CONTINUE          
    12 RETURN            
       END               
+
+
       SUBROUTINE VARIB(DE)            
         implicit real*8(A-H,O-Z)
 C     ROUTINE FOR MODEL APR 77        
@@ -995,6 +1019,8 @@ C     ROUTINE FOR MODEL APR 77
       QG92=1.05         
       GO TO 16          
       END               
+
+
       SUBROUTINE VZD(DE,G1,G9,A)      
         implicit real*8(A-H,O-Z)
 C     ROUTINE FOR MODEL APR 77        
@@ -1059,6 +1085,8 @@ C     MIXED--ALL YEAR TIME BLOCK YS AND CONTINENTAL V(50)
    18 CONTINUE          
       RETURN            
       END               
+
+
       FUNCTION WSCAT(H,S,R1,R2)       
         implicit real*8(A-H,O-Z)
       DIMENSION R(2)    
@@ -1094,6 +1122,8 @@ C     MIXED--ALL YEAR TIME BLOCK YS AND CONTINENTAL V(50)
       WSCAT=LOG(A)*4.3429 
       RETURN            
       END               
+
+
       SUBROUTINE YIKK(T,PV,V)         
         implicit real*8(A-H,O-Z)
 C     ROUTINE FOR MODEL APR 77        
